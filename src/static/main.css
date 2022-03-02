@@ -1,0 +1,19 @@
+.btn_1{
+    padding: 1em ;
+}
+.form-text{
+    padding: 0em 1em;
+}
+.centrado{
+    padding: 0em 2em;
+}
+.form-label{
+    padding: 1em 1em;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.col-md-3{
+    padding: 2em 0em;
+}

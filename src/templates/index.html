@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">WebAppDescargar</a>
+    </div>
+    </div>
+</nav>
+<div class="contanier">
+    <label for="user_input" class="form-label">URL del Video</label>
+    <form action={{ url_for('descargar_al_servidor') }}>
+        <div class="centrado" align="center">
+            <input type="user_input" id="user_input" class="form-control" name="urlVideo" autocomplete="off">
+            <div id="user_input" class="form-text">
+                Ingresar la direccion URL del video que desea descargar.
+            </div>
+        </div>
+        <div class="btn_1" align="center">
+            <button type="submit" class="btn btn-outline-danger">Descargar</button>
+            <div class="col-md-3">
+                <select class="form-select" id="tipo_input" required name="tipo_input">
+                    <option>Audio</option>
+                    <option>Video</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
